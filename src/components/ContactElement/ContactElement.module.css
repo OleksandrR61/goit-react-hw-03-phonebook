@@ -1,0 +1,21 @@
+.button {
+    padding: 4px 8px;
+    border-radius: 8px;
+    border-color: black;
+    cursor: pointer;
+
+    transition: color 0.25s linear,
+                background-color 0.25s linear,
+                border-color 0.25s linear;
+}
+
+.button:hover,
+.button:focus {
+    color: white;
+    background-color: blueviolet;
+    border-color: transparent;
+
+    transition: color 0.25s linear,
+                background-color 0.25s linear,
+                border-color 0.25s linear;
+}

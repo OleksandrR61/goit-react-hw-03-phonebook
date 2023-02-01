@@ -1,0 +1,41 @@
+.form {
+    display: flex;
+    flex-flow: column;
+
+    width: 300px;
+
+    padding: 16px;
+
+    border: 1px solid;
+}
+
+.label {
+    margin-bottom: 8px;
+}
+
+.input {
+    margin-bottom: 32px;
+}
+
+.button {
+    padding: 4px 8px;
+    width: 100px;
+    border-radius: 8px;
+    border-color: black;
+    cursor: pointer;
+
+    transition: color 0.25s linear,
+                background-color 0.25s linear,
+                border-color 0.25s linear;
+}
+
+.button:hover,
+.button:focus {
+    color: white;
+    background-color: blueviolet;
+    border-color: transparent;
+
+    transition: color 0.25s linear,
+                background-color 0.25s linear,
+                border-color 0.25s linear;
+}
