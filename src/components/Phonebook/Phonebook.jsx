@@ -10,10 +10,12 @@ export default class Phonebook extends Component {
     };
 
     componentDidMount() {
-        this.setState({
-            contacts: JSON.parse(localStorage.getItem('contacts')),
-            filter: '',
-        })
+        if (JSON.parse(localStorage.getItem('contacts'))) {
+            this.setState({
+                contacts: JSON.parse(localStorage.getItem('contacts')),
+                filter: '',
+            })
+        }
     }
 
     componentDidUpdate(_, prevState) {
